@@ -242,6 +242,10 @@ li a:hover {
  
 }
 
+.list-group-item small {
+    text-align: end;
+}
+
 
 
 /* Large devices (desktops, 992px and up) */
@@ -292,7 +296,7 @@ li a:hover {
     }
 
     #email-list {
-        height: 280px;
+        height: 290px;
         overflow: auto;
     }
 
