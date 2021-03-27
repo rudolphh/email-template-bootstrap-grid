@@ -72,8 +72,102 @@ body, html {
     font-weight: bold;
 }
 
+#search-btn:hover {
+    background-color: #413e38;
+}
+
+#search-input {
+    font-size: 14px;
+}
+
 #email-body {
     background-color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 100px;
+    color: #413e38;
+    display: flex;
+    flex-direction: column;
+}
+
+#to, #from, #content {
+    opacity: 0.8;
+}
+
+#to, #from {
+    font-size: 11px;
+}
+
+#from {
+    margin-bottom: 30px;
+}
+
+#email-title-bar {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: baseline;
+}
+
+#email-title-bar h4 {
+    margin-right: auto;
+}
+
+#email-title-bar i {
+    margin-right: 20px;
+    opacity: 0.5;
+}
+
+#email-title-bar i:hover {
+    opacity: 1;
+}
+
+#content {
+    font-size: 1.1rem;
+    margin-bottom: 100px;
+}
+
+#content p {
+    margin-bottom: 25px;
+}
+
+#reply {
+    margin-top: auto;
+    border: 1px solid #413e38;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#reply-text {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+#reply-bar {
+    display: flex;
+}
+
+#paperclip-icon {
+    opacity: 0.3;
+}
+
+#paperclip-icon:hover {
+    opacity: 1;
+}
+
+#reply-btn {
+    margin-left: auto;
+    border: 2px solid #dcb353;
+    font-size: 14px;
+    font-weight: bold;
+    color: #dcb353;
+    width: 90px;
+}
+
+#reply-btn:hover {
+    color: white;
+    background-color: #dcb353;
 }
 
 #compose-btn {
@@ -83,7 +177,7 @@ body, html {
     margin-bottom: 80px;
 }
 
-ul { padding-left: 0; }
+ul { padding-left: 0; margin-bottom: 50px; }
 ul li {
     list-style: none;
     margin-bottom: 20px;
@@ -102,6 +196,7 @@ li a:hover {
 .list-group-item {
     z-index: 2;
     color: #413e38;
+    opacity: 0.8;
     background-color: #f4f3ef;
     border: 1px solid #f4f3ef;
     margin: 15px 0 15px 0;
@@ -112,6 +207,7 @@ li a:hover {
 }
 
 .list-group-item:hover {
+    opacity: 1;
     z-index: 2;
     color: #413e38;
     background-color: white;
@@ -133,10 +229,6 @@ li a:hover {
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) { 
  
-    #email-body {
-        height: 50vh;
-    }
-
     #compose-btn {
         margin-bottom: 40px;
     }
@@ -167,6 +259,7 @@ li a:hover {
         display: inline-block;
         text-align: center;
         padding: 0;
+        margin-bottom: 0;
     }
 
     #welcome {
