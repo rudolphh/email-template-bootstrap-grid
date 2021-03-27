@@ -142,6 +142,7 @@ body, html {
     border-radius: 5px;
     border: none;
     resize: none;
+    color: #413e38
 }
 
 #reply-bar {
@@ -272,14 +273,22 @@ li a:hover {
     ul li {
         display: inline-block;
         padding: 10px;
-        margin-bottom: 0;
+        margin-bottom: 0px;
+    }
+
+    ul > li:first-child {
+        padding-left: 0;
+    }
+
+    ul > li:last-child {
+        padding-right: 0;
     }
 
     ul {
         display: inline-block;
         text-align: center;
         padding: 0;
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
 
     #welcome {
@@ -300,20 +309,3 @@ li a:hover {
 
 }
  
-
-
- 
-
-
-
- 
- 
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Custom media queries
-*/
- 
-/* Set width to make card deck cards 100% width */
-@media (max-width: 950px) { 
- 
-}
