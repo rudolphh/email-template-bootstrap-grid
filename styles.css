@@ -217,7 +217,7 @@ li a:hover {
     opacity: 0.8;
     background-color: #f4f3ef;
     border: 1px solid #f4f3ef;
-    margin: 15px 0 15px 0;
+    margin: 15px 0 0 0;
     padding: 15px 30px 15px 30px;
     font-size: 14px;
     box-shadow: #f4f3ef 0px 6px 12px -2px, #f4f3ef 0px 3px 7px -3px;
@@ -266,7 +266,7 @@ li a:hover {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {  
+@media (max-width: 575px) {  
     ul li {
         display: inline-block;
         padding: 10px;
@@ -289,6 +289,11 @@ li a:hover {
         width: 39%;
         margin-bottom: 15px;
         float: right;
+    }
+
+    #email-list {
+        height: 280px;
+        overflow: auto;
     }
 
 }
